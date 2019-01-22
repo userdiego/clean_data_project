@@ -7,6 +7,6 @@ The complete data were obtained via Coursera from the following publication:
 
 The raw data are analized to extract the mean and standard deviation from each subject and each activity, of the variables described in the codebook.
 
-The script first downloads and unzips the data to the working directory, and its sourcing results in a tidy dataset that is saved in the working directory to "tidy.txt" for future use. 
+The script first downloads and unzips the data to the working directory, and its sourcing results in a tidy dataset that is saved in the working directory to "tidy.txt" for future use. Each step is described in the script.
 
 Thank you very much for reviewing, I'll very much appreciate any comments.
