@@ -5,25 +5,7 @@ The dataset consists of measurements from a group of 30 volunteers within an age
 The complete data were obtained via Coursera from the following publication:
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012.
 
-The raw data are analized to extract the mean and standard deviation from each subject and each activity, of the following variables:
-
-TimeBodyAcc-XYZ
-TimeGravityAcc-XYZ
-TimeBodyAccJerk-XYZ
-TimeBodyGyro-XYZ
-TimeBodyGyroJerk-XYZ
-TimeBodyAccMag
-TimeGravityAccMag
-TimeBodyAccJerkMag
-TimeBodyGyroMag
-TimeBodyGyroJerkMag
-FreqBodyAcc-XYZ
-FreqBodyAccJerk-XYZ
-FreqBodyGyro-XYZ
-FreqBodyAccMag
-FreqBodyAccJerkMag
-FreqBodyGyroMag
-FreqBodyGyroJerkMag
+The raw data are analized to extract the mean and standard deviation from each subject and each activity, of the variables described in the codebook.
 
 The script first downloads and unzips the data to the working directory, and its sourcing results in a tidy dataset that is saved in the working directory to "tidy.txt" for future use. 
 
