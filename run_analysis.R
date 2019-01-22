@@ -19,7 +19,7 @@ act_train <- read.table("./UCI HAR Dataset/train/y_train.txt")
 data_test <- cbind(subject_test, act_test, measures_test)
 data_train <- cbind(subject_train, act_train, measures_train)
 
-##Merging the test and train
+##Merging the test and train sets
 
 data <- rbind(data_test, data_train)
 
@@ -42,8 +42,6 @@ data <- data[ , c(1, 2, selection)]
 install.packages("dplyr")
 library(dplyr)
 data <- arrange(data, data$subject)
-
-## 
 
 ## Creating tidy dataset with variable averages for each subject
 ## Saving dataset in .txt file
