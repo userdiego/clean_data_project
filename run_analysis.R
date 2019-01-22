@@ -1,6 +1,5 @@
 ##Downloading and unzipping the data
 
-
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", destfile = "data.zip")
 unzip("data.zip")
 
@@ -34,8 +33,8 @@ names(data) <- gsub("\\)", "", names(data))
 names(data) <- gsub("^t","Time", names(data))
 names(data) <- gsub("^f","Freq", names(data))
 
-## Extracting means and standard deviation measurements.
-## Ordering by subject.
+## Extracting means and standard deviation measurements
+## Ordering by subject
 
 selection <- c(grep("mean()", names(data)), grep("std()", names(data)))
 data <- data[ , c(1, 2, selection)]
@@ -46,8 +45,8 @@ data <- arrange(data, data$subject)
 
 ## 
 
-## Creating tidy dataset with variable averages for each subject.
-## Saving dataset in .txt file.
+## Creating tidy dataset with variable averages for each subject
+## Saving dataset in .txt file
 
 install.packages("reshape2")
 library(reshape2)
